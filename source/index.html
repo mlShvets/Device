@@ -201,48 +201,50 @@
       </ul>
     </section>
     <section class="services">
-      <h2 class="visually-hidden">Сервисы</h2>
-      <div class="services-switcher">
-        <ul class="services-switcher__list">
-          <li class="services-switcher__item">
-            <button class="services-switcher__btn services-switcher__btn--current" type="button">Доставка</button>
-          </li>
-          <li class="services-switcher__item">
-            <button class="services-switcher__btn" type="button">Гарантия</button>
-          </li>
-          <li class="services-switcher__item">
-            <button class="services-switcher__btn" type="button">Кредит</button>
-          </li>
-        </ul>
-      </div>
-      <div class="services-description">
-        <ul class="services-description__list">
-          <li
-            class="services-description__item services-description__item--delivery services-description__item--current">
-            <h3 class="services-description__title">Доставка</h3>
-            <p class="services-description__content">
-              Мы с удовольствием доставим ваш товар прямо к вашему
-              подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш этаж.
-            </p>
-          </li>
-          <li class="services-description__item services-description__item--garanty">
-            <h3 class="services-description__title">Гарантия</h3>
-            <p class="services-description__content">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом —
-              не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
-          </li>
-          <li class="services-description__item services-description__item--credit">
-            <h3 class="services-description__title">Кредит</h3>
-            <p class="services-description__content">
-              Залезть в долговую яму стало проще! Кредитные консультанты
-              подберут для вас наиболее выгодные
-              условия кредита. Выгодные для нашего банка, разумеется.
-            </p>
-          </li>
-        </ul>
+      <div class="services__wrap container">
+        <h2 class="visually-hidden">Сервисы</h2>
+        <div class="services-switcher">
+          <ul class="services-switcher__list">
+            <li class="services-switcher__item">
+              <button class="services-switcher__btn services-switcher__btn--current" type="button">Доставка</button>
+            </li>
+            <li class="services-switcher__item">
+              <button class="services-switcher__btn" type="button">Гарантия</button>
+            </li>
+            <li class="services-switcher__item">
+              <button class="services-switcher__btn" type="button">Кредит</button>
+            </li>
+          </ul>
+        </div>
+        <div class="services-description">
+          <ul class="services-description__list">
+            <li
+              class="services-description__item services-description__item--delivery services-description__item--current">
+              <h3 class="services-description__title">Доставка</h3>
+              <p class="services-description__content">
+                Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем, поднимая его на ваш этаж.
+              </p>
+            </li>
+            <li class="services-description__item services-description__item--garanty">
+              <h3 class="services-description__title">Гарантия</h3>
+              <p class="services-description__content">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.
+              </p>
+            </li>
+            <li class="services-description__item services-description__item--credit">
+              <h3 class="services-description__title">Кредит</h3>
+              <p class="services-description__content">
+                Залезть в долговую яму стало проще! Кредитные консультанты
+                подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="manufacturers container">
@@ -410,6 +412,36 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Интерактивная карта</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.3103082392515!2d37.52932636874424!3d55.6862116278918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1628265651855!5m2!1sru!2sru"
+      width="960" height="573" style="border: 0;" allowfullscreen="" loading="lazy"
+      title="г. Москва, ул. Строителей, 15"></iframe>
+    <button class="modal__close modal__close--map" type="button" aria-label="Закрыть"></button>
+  </section>
+
+  <section class="modal feedback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="feedback__wrap">
+        <label class="feedback__label">Ваше имя:
+          <input class="feedback__input" type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label lass="feedback__label">Ваш e-mail:
+          <input class="feedback__input" type="email" name="email" placeholder="email@example.com">
+        </label>
+        <label lass="feedback__label"> Текст письма:
+          <textarea class="feedback__input feedback__textarea" name="message"
+            placeholder="В свободной форме"></textarea>
+        </label>
+      </div>
+      <button class="feedback__btn" type="submit" aria-label="Закрыть"></button>
+    </form>
+    <button class="modal__close modal__close--feedback" type="button" aria-label="Закрыть"></button>
+  </section>
+
 </body>
 
 </html>
