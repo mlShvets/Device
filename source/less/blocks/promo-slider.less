@@ -1,0 +1,19 @@
+.promo-slider {
+  position: relative;
+}
+
+.promo-slider__item {
+  display: none;
+  width: max-content;
+
+  &--current {
+    display: grid;
+    grid-template-columns: repeat(2, 512px);
+  }
+}
+
+.promo-slider__switcher {
+  position: absolute;
+  right: 20%;
+  top: 22%;
+}
