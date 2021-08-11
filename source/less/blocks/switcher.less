@@ -1,0 +1,33 @@
+.switcher {
+  position: absolute;
+  right: 88px;
+  bottom: 172px;
+  min-width: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switcher__btn {
+  position: relative;
+  background-color: #ffffff;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+
+  &--current::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+}

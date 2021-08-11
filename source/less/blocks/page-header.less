@@ -1,4 +1,36 @@
+.page-header {
+  margin-top: 20px;
+  background-image: linear-gradient(180deg, white 20px, #f7e296 20px, #f7e296 100%);
+  background-color: #f7e296;
+  padding: 0 60px;
+  width: 1160px;
+}
+
+.page-header__logo,
+.logo__img {
+  width: 163px;
+  height: 35px;
+}
+
+.page-header--index .page-header__logo {
+  pointer-events: none;
+}
+
+.page-header__logo {
+  margin-bottom: 15px;
+
+  :focus,
+  :hover {
+    opacity: 0.6;
+  }
+
+  :active {
+    opacity: 0.3;
+  }
+}
+
 .page-header__top-wrap {
   display: grid;
   grid-template-columns: 520px 520px;
+  margin-bottom: 34px;
 }

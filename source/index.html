@@ -12,40 +12,42 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header container">
+  <header class="page-header page-header--index container">
     <a class="page-header__logo logo" href="#">
       <img class="logo__img" src="img/logo.svg" width="163" height="35" alt="Логотип">
     </a>
     <div class="page-header__top-wrap">
       <form class="page-header__form search">
-        <input class="search__imput" type="search" placeholder="Поиск по сайту" name="header-search" id="header-search">
         <label class="visually-hidden" for="header-search">Поиск</label>
+        <input class="search__imput" type="search" placeholder="Поиск по сайту" name="header-search" id="header-search">
         <button class="search__btn" type="submit">Найти</button>
       </form>
       <div class="page-header__menu user-menu">
         <ul class="user-menu__list user-menu__login">
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">Войти
+            <a class="user-menu__link" href="#">
               <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M4.50008 0.333328C5.69716 0.333328 6.66675 1.3775 6.66675 2.66666C6.66675 3.95583 5.69716 5 4.50008 5C3.303 5 2.33341 3.95583 2.33341 2.66666C2.33341 1.3775 3.303 0.333328 4.50008 0.333328ZM4.50008 9.66666C4.50008 9.66666 8.83341 9.66666 8.83341 8.5C8.83341 7.1 6.72091 5.58333 4.50008 5.58333C2.27925 5.58333 0.166748 7.1 0.166748 8.5C0.166748 9.66666 4.50008 9.66666 4.50008 9.66666Z"
                   fill="black" />
               </svg>
+              <span>Войти</span>
             </a>
           </li>
         </ul>
         <ul class="user-menu__list user-menu__action">
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">Сравнить
+            <a class="user-menu__link" href="#">
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.916748 3.36667H2.66675V9.08334H0.916748V3.36667ZM4.18342 0.916672H5.81675V9.08334H4.18342V0.916672ZM7.45008 5.58334H9.08342V9.08334H7.45008V5.58334Z"
                   fill="black" />
               </svg>
+              <span>Сравнить</span>
             </a>
           </li>
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">Корзина
+            <a class="user-menu__link" href="#">
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z"
@@ -54,6 +56,7 @@
                   d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
                   fill="#231F20" />
               </svg>
+              <span>Корзина</span>
             </a>
           </li>
         </ul>
@@ -106,23 +109,23 @@
       <ol class="promo-slider__list">
         <li class="promo-slider__item promo-slider__item--current">
           <h3 class="visually-hidden">Палка для селфи</h3>
-          <picture>
-            <img class="promo-slider__img" src="img/index/selfie-stick.jpg" srcset="img/index/selfie-stick@2x.jpg 2x"
+          <picture class="promo-slider__picture">
+            <img class="promo-slider__img" src="img/index/selfie-stick.png" srcset="img/index/selfie-stick@2x.png 2x"
               width="384" height="486" alt="Палка для селфи">
           </picture>
           <div class="promo-slider__content">
-            <p class="promo-slider__title">Делай селфи, как Бен Стиллер!</p>
+            <p class="promo-slider__title">Делай селфи,<br>как Бен&nbsp;Стиллер!</p>
             <p class="promo-slider__description">Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="promo-slider__link" href="#">Подробнее</a>
+            <a class="promo-slider__link button" href="#">Подробнее</a>
             <dl class="promo-slider__specification specification">
               <div class="specification__item">
                 <dt class="specification__termin">Длина палки</dt>
-                <dd class="specification__description">8,5 м</dd>
+                <dd class="specification__description">8,5&nbsp;м</dd>
               </div>
               <div class="specification__item">
                 <dt class="specification__termin">Вес палки</dt>
-                <dd class="specification__description">5 кг</dd>
+                <dd class="specification__description">5&nbsp;кг</dd>
               </div>
               <div class="specification__item">
                 <dt class="specification__termin">Материал</dt>
@@ -133,42 +136,47 @@
         </li>
         <li class="promo-slider__item">
           <h3 class="visually-hidden">Фитнес-браслет</h3>
-          <picture>
-            <img class="promo-slider__img" src="img/index/fitness-bracelet.jpg"
-              srcset="img/index/fitness-bracelet@2x.jpg 2x" width="384" height="486" alt="Фитнес-браслет">
+          <picture class="promo-slider__picture">
+            <img class="promo-slider__img" src="img/index/fitness-bracelet.png"
+              srcset="img/index/fitness-bracelet@2x.png 2x" width="384" height="486" alt="Фитнес-браслет">
           </picture>
-          <p class="promo-slider__title">Худеем правильно!</p>
-          <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы
-            не пропускать занятия и соблюдать диету.</p>
-          <a class="promo-slider__link" href="#">Подробнее</a>
-          <dl class="promo-slider__specification specification">
-            <div class="specification__item">
-              <dt class="specification__termin">Без подзарядки</dt>
-              <dd class="specification__description">48 часов</dd>
-            </div>
-          </dl>
+          <div class="promo-slider__content">
+            <p class="promo-slider__title">Худеем <br> правильно!</p>
+            <p class="promo-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы
+              <br>не пропускать занятия и соблюдать диету.
+            </p>
+            <a class="promo-slider__link button" href="#">Подробнее</a>
+            <dl class="promo-slider__specification specification">
+              <div class="specification__item">
+                <dt class="specification__termin">Без подзарядки</dt>
+                <dd class="specification__description">48 часов</dd>
+              </div>
+            </dl>
+          </div>
         </li>
         <li class="promo-slider__item">
           <h3 class="visually-hidden">Квадрокоптер</h3>
-          <picture>
-            <img class="promo-slider__img" src="img/index/quadrocopter.jpg" srcset="img/index/quadrocopter@2x.jpg 2x"
+          <picture class="promo-slider__picture">
+            <img class="promo-slider__img" src="img/index/quadrocopter.png" srcset="img/index/quadrocopter@2x.png 2x"
               width="526" height="334" alt="Квадрокоптер">
           </picture>
-          <p class="promo-slider__title">Порхает как бабочка, жалит как пчела!</p>
-          <p class="promo-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен
-            мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <a class="promo-slider__link" href="#">Подробнее</a>
-          <dl class="promo-slider__specification specification">
-            <div class="specification__item">
-              <dt class="specification__termin">Дальность полета</dt>
-              <dd class="specification__description">800 м</dd>
-            </div>
-            <div class="specification__item">
-              <dt class="specification__termin">Радиус поражения</dt>
-              <dd class="specification__description">50 м</dd>
-            </div>
-          </dl>
+          <div class="promo-slider__content">
+            <p class="promo-slider__title">Порхает как бабочка,<br> жалит как пчела!</p>
+            <p class="promo-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+              мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a class="promo-slider__link button" href="#">Подробнее</a>
+            <dl class="promo-slider__specification specification">
+              <div class="specification__item">
+                <dt class="specification__termin">Дальность полета</dt>
+                <dd class="specification__description">800&nbsp;м</dd>
+              </div>
+              <div class="specification__item">
+                <dt class="specification__termin">Радиус поражения</dt>
+                <dd class="specification__description">50&nbsp;м</dd>
+              </div>
+            </dl>
+          </div>
         </li>
       </ol>
       <div class="promo-slider__switcher switcher">
@@ -323,29 +331,31 @@
           <img class="logo__img" src="img/logo-footer.svg" width="163" height="35" alt="Логотип">
         </a>
         <div class="page-footer__menu user-menu">
-          <ul class="user-menu__list user-menu__login">
+          <ul class="user-menu__list user-menu__list--footer user-menu__login">
             <li class="user-menu__item">
-              <a class="user-menu__link" href="#">Войти
+              <a class="user-menu__link" href="#">
                 <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M4.50008 0.333328C5.69716 0.333328 6.66675 1.3775 6.66675 2.66666C6.66675 3.95583 5.69716 5 4.50008 5C3.303 5 2.33341 3.95583 2.33341 2.66666C2.33341 1.3775 3.303 0.333328 4.50008 0.333328ZM4.50008 9.66666C4.50008 9.66666 8.83341 9.66666 8.83341 8.5C8.83341 7.1 6.72091 5.58333 4.50008 5.58333C2.27925 5.58333 0.166748 7.1 0.166748 8.5C0.166748 9.66666 4.50008 9.66666 4.50008 9.66666Z"
                     fill="black" />
                 </svg>
+                <span>Войти</span>
               </a>
             </li>
           </ul>
           <ul class="user-menu__list user-menu__action">
             <li class="user-menu__item">
-              <a class="user-menu__link" href="#">Сравнить
+              <a class="user-menu__link" href="#">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0.916748 3.36667H2.66675V9.08334H0.916748V3.36667ZM4.18342 0.916672H5.81675V9.08334H4.18342V0.916672ZM7.45008 5.58334H9.08342V9.08334H7.45008V5.58334Z"
                     fill="black" />
                 </svg>
+                <span>Сравнить</span>
               </a>
             </li>
             <li class="user-menu__item">
-              <a class="user-menu__link" href="#">Корзина
+              <a class="user-menu__link" href="#">
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z"
@@ -354,6 +364,7 @@
                     d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z"
                     fill="#231F20" />
                 </svg>
+                <span>Корзина</span>
               </a>
             </li>
           </ul>
@@ -453,6 +464,7 @@
     </form>
     <button class="modal__close modal__close--feedback" type="button" aria-label="Закрыть"></button>
   </section>
+  <script src="js/slider.js"></script>
 
 </body>
 

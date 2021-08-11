@@ -1,0 +1,32 @@
+.button {
+  position: relative;
+  z-index: 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 8px;
+    background-color: #f0c52e;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &:hover::before,
+  &:focus::before {
+    height: 100%;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

@@ -1,16 +1,29 @@
 .user-menu {
   display: grid;
-  grid-template-columns: 250px 250px;
+  grid-template-columns: 250px 240px;
+  grid-column-gap: 30px;
 }
 
 .user-menu__list {
   display: flex;
   min-width: 224px;
   align-items: center;
+}
+
+.user-menu__list--footer {
   justify-content: flex-end;
 }
 
 .user-menu__action {
   display: flex;
   justify-content: space-between;
+}
+
+.user-menu__link {
+  line-height: 20px;
+  padding-left: 22px;
+
+  span {
+    margin-left: 9px;
+  }
 }
