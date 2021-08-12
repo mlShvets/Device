@@ -1,0 +1,45 @@
+.services-switcher {
+  position: relative;
+  padding-top: 115px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 320px;
+    background-color: #000000;
+    top: 35px;
+    right: -4px;
+  }
+}
+
+.services-switcher__item {
+  margin-bottom: 21px;
+}
+
+.services-switcher__btn {
+  background: none;
+  border: none;
+  width: 160px;
+  height: 40px;
+  padding: 0;
+
+  &--current {
+    color: #f7e296;
+
+    &::before {
+      width: 277px;
+      background-color: black;
+      height: 40px;
+    }
+  }
+
+  &:active {
+    color: #f7e296;
+
+    &::before {
+      width: 277px;
+      background-color: black;
+    }
+  }
+}

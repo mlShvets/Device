@@ -6,6 +6,8 @@ const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
+const rename =  require("gulp-rename");
 
 // Styles
 
@@ -47,6 +49,18 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
+const sprite = () => {
+  return gulp.src("source/img/icons/sprite/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img/"));
+}
+
+exports.sprite = sprite;
+
+
 exports.default = gulp.series(
-  styles, server, watcher
+  sprite, styles, server, watcher
 );
