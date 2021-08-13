@@ -11,6 +11,16 @@
 .products-type__link {
   width: 160px;
   min-height: 242px;
+
+  &:hover .products-type__img-wrap,
+  &:focus .products-type__img-wrap {
+    background-color: #f0c52e;
+  }
+
+  &:active .products-type__img,
+  &:active .products-type__title {
+    opacity: 0.3;
+  }
 }
 
 .products-type__img-wrap {
