@@ -1,5 +1,20 @@
+.manufacturers {
+  margin-bottom: 80px;
+}
+
 .manufacturers__list {
   display: grid;
   grid-template-columns: repeat(4, 260px);
   grid-gap: 40px;
+}
+
+.manufacturers__link {
+  &:hover .manufacturers__img,
+  &:focus .manufacturers__img {
+    filter: none;
+  }
+}
+
+.manufacturers__img {
+  filter: grayscale(100%) opacity(0.2);
 }

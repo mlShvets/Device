@@ -13,8 +13,8 @@
 
 <body class="page-body">
   <header class="page-header page-header--index container">
-    <a class="page-header__logo logo" href="#">
-      <img class="logo__img" src="img/logo.svg" width="163" height="35" alt="Логотип">
+    <a class="page-header__logo" href="#">
+      <img src="img/logo.svg" width="163" height="35" alt="Логотип">
     </a>
     <div class="page-header__top-wrap">
       <form class="page-header__form search">
@@ -25,7 +25,7 @@
       <div class="page-header__menu user-menu">
         <ul class="user-menu__list user-menu__login">
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
+            <a class="user-menu__link user-menu__link--header" href="#">
               <svg width="9" height="10">
                 <use xlink:href="img/sprite.svg#icon-user"></use>
               </svg>
@@ -35,7 +35,7 @@
         </ul>
         <ul class="user-menu__list user-menu__action">
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
+            <a class="user-menu__link user-menu__link--header" href="#">
               <svg width="10" height="10">
                 <use xlink:href="img/sprite.svg#icon-chart"></use>
               </svg>
@@ -43,7 +43,7 @@
             </a>
           </li>
           <li class="user-menu__item">
-            <a class="user-menu__link" href="#">
+            <a class="user-menu__link user-menu__link--header" href="#">
               <svg width="10" height="10">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
@@ -222,7 +222,7 @@
         <li class="products-type__item">
           <a class="products-type__link" href="#">
             <div class="products-type__img-wrap">
-              <svg class="products-type__img" width="56" height="98" >
+              <svg class="products-type__img" width="56" height="98">
                 <use xlink:href="img/sprite.svg#icon-smart-watche"></use>
               </svg>
             </div>
@@ -247,7 +247,8 @@
         <div class="services-switcher">
           <ul class="services-switcher__list">
             <li class="services-switcher__item">
-              <button class="services-switcher__btn services-switcher__btn--current button" type="button">Доставка</button>
+              <button class="services-switcher__btn services-switcher__btn--current button"
+                type="button">Доставка</button>
             </li>
             <li class="services-switcher__item">
               <button class="services-switcher__btn button" type="button">Гарантия</button>
@@ -292,27 +293,35 @@
       <h2 class="visually-hidden">Производители</h2>
       <ul class="manufacturers__list">
         <li class="manufacturers__item">
-          <picture>
-            <img class="manufacturers__img" src="img/index/dji.png" srcset="img/index/dji@2x.png 2x" width="260"
-              height="100" alt="DJI">
+          <a class="manufacturers__link" href="#">
+            <picture>
+              <img class="manufacturers__img" src="img/index/dji.png" srcset="img/index/dji@2x.png 2x" width="260"
+                height="100" alt="DJI">
+            </picture>
+          </a>
+        </li>
+        <li class="manufacturers__item">
+          <a class="manufacturers__link" href="#">
+            <picture>
+              <img class="manufacturers__img" src="img/index/sp-gadgets.png" srcset="img/index/sp-gadgets@2x.png 2x"
+                width="260" height="100" alt="SP Gadgets">
+            </picture>
+          </a>
+        </li>
+        <li class="manufacturers__item">
+          <a class="manufacturers__link" href="#">
+            <picture>
+              <img class="manufacturers__img" src="img/index/go-pro.png" srcset="img/index/go-pro@2x.png 2x" width="260"
+                height="100" alt="GoPro">
+          </a>
           </picture>
         </li>
         <li class="manufacturers__item">
-          <picture>
-            <img class="manufacturers__img" src="img/index/sp-gadgets.png" srcset="img/index/sp-gadgets@2x.png 2x"
-              width="260" height="100" alt="SP Gadgets">
-          </picture>
-        </li>
-        <li class="manufacturers__item">
-          <picture>
-            <img class="manufacturers__img" src="img/index/go-pro.png" srcset="img/index/go-pro@2x.png 2x" width="260"
-              height="100" alt="GoPro">
-          </picture>
-        </li>
-        <li class="manufacturers__item">
-          <picture>
-            <img class="manufacturers__img" src="img/index/vive.png" srcset="img/index/vive@2x.png 2x" width="260"
-              height="100" alt="VIVE">
+          <a class="manufacturers__link" href="#">
+            <picture>
+              <img class="manufacturers__img" src="img/index/vive.png" srcset="img/index/vive@2x.png 2x" width="260"
+                height="100" alt="VIVE">
+          </a>
           </picture>
         </li>
       </ul>
@@ -321,15 +330,15 @@
       <section class="main-description__about about">
         <h2 class="about__title">О нас</h2>
         <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика,
-          который есть в каждом из нас.</p>
+          <br> который есть в каждом из нас.</p>
         <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки
-          России! DEVICE работает со многими транспортными компаниями:</p>
+          <br> России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="about__list">
           <li class="about__item">Деловые линии</li>
           <li class="about__item">Автотрейдинг</li>
           <li class="about__item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about__link" href="#">Подробнее о нас</a>
+        <a class="about__link button" href="#">Подробнее о нас</a>
       </section>
       <section class="main-description__contacts contacts">
         <h2 class="contacts__title">Контакты</h2>
@@ -341,20 +350,20 @@
               alt="Офис: г. Москва, ул. Строителей, д.15">
           </picture>
         </a>
-        <a class="contacts__link" href="#">Напишите нам</a>
+        <a class="contacts__link button" href="#">Напишите нам</a>
       </section>
     </div>
   </main>
-  <footer class="page-footer" style="background-color: #363636;">
+  <footer class="page-footer">
     <div class="page-footer__wrap container">
       <div class="page-footer__top">
-        <a class="page-footer__logo logo" href="#">
-          <img class="logo__img" src="img/logo-footer.svg" width="163" height="35" alt="Логотип">
+        <a class="page-footer__logo" href="#">
+          <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип">
         </a>
         <div class="page-footer__menu user-menu">
           <ul class="user-menu__list user-menu__list--footer user-menu__login">
             <li class="user-menu__item">
-              <a class="user-menu__link" href="#">
+              <a class="user-menu__link user-menu__link--footer" href="#">
                 <svg width="9" height="10" viewBox="0 0 9 10">
                   <use xlink:href="img/sprite.svg#icon-user"></use>
                 </svg>
@@ -364,7 +373,7 @@
           </ul>
           <ul class="user-menu__list user-menu__action">
             <li class="user-menu__item">
-              <a class="user-menu__link" href="#">
+              <a class="user-menu__link user-menu__link--footer" href="#">
                 <svg width="10" height="10" viewBox="0 0 10 10">
                   <use xlink:href="img/sprite.svg#icon-chart"></use>
                 </svg>
@@ -372,7 +381,7 @@
               </a>
             </li>
             <li class="user-menu__item">
-              <a class="user-menu__link" href="#">
+              <a class="user-menu__link user-menu__link--footer" href="#">
                 <svg width="10" height="10" viewBox="0 0 10 10">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -402,7 +411,7 @@
           <li class="social__item">
             <a class="social__link" href="#">
               <span class="visually-hidden"> Фэйсбук </span>
-              <svg class="social__img" width="32" height="32" >
+              <svg class="social__img" width="32" height="32">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -425,7 +434,7 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden"> HTML Academy
           </span>
           <svg class="copyright__img" width="27" height="34">
