@@ -1,15 +1,37 @@
-.services-description {
-  padding-top: 105px;
+.services-description__wrap {
+  padding-top: 71px;
+  max-width: 570px;
 }
 
 .services-description__item {
   display: none;
+  position: relative;
 
   &--current {
     display: block;
   }
-}
 
+  &::after {
+    position: absolute;
+    content: "";
+    right: -20px;
+    top: 55px;
+    width: 180px;
+    height: 200px;
+  }
+
+  &--delivery::after {
+    background: url("../img/index/delivery.svg") no-repeat center;
+  }
+
+  &--garanty::after {
+    background: url("../img/index/garanty.svg") no-repeat center;
+  }
+
+  &--credit::after {
+    background: url("../img/index/credit.svg") no-repeat center;
+  }
+}
 
 .services-description__title {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -25,18 +47,5 @@
 .services-description__content {
   line-height: 30px;
   letter-spacing: 0.1em;
-  max-width: 570px;
   margin: 0;
-}
-
-.services-description__item--delivery {
-  background: url("../img/index/delivery.svg") no-repeat right top;
-}
-
-.services-description__item--garanty {
-  background: url("../img/index/garanty.svg") no-repeat right top;
-}
-
-.services-description__item--credit {
-  background: url("../img/index/credit.svg") no-repeat right top;
 }

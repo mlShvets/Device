@@ -2,10 +2,28 @@
   display: flex;
   min-width: 52px;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .sort-btn__item {
   &:not(:last-of-type) {
     padding-right: 16px;
+  }
+}
+
+.sort-btn__link {
+  opacity: 0.3;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &--current {
+    opacity: 1;
   }
 }

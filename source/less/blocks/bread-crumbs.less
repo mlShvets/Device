@@ -1,7 +1,40 @@
 .bread-crumbs {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.bread-crumbs__item:not(:last-of-type) {
-  padding-right: 40px;
+.bread-crumbs__item {
+  position: relative;
+
+  &:not(:last-of-type) {
+    padding-right: 40px;
+  }
+
+  &:not(:last-of-type)::before {
+    position: absolute;
+    content: "";
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='4' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M.147 5.942l2.29-2.295-2.29-2.295.705-.705 3 3-3 3-.705-.705z' fill='%23000'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    right: 13px;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+  }
+}
+
+.bread-crumbs__link {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.3);
+
+  &:focus,
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }

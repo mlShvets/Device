@@ -2,10 +2,53 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ebebeb;
+  margin-bottom: 78px;
 }
 
 .pagination__list {
   display: flex;
   justify-content: space-between;
   min-width: 85px;
+  padding-left: 7px;
+}
+
+.pagination__btn,
+.pagination__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pagination__link {
+  opacity: 0.3;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &--current {
+    opacity: 1;
+  }
+}
+
+.pagination__btn {
+  padding: 25px 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #d9d9d9;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

@@ -1,0 +1,43 @@
+.filter {
+  background-color: #e5e5e5;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    background-color: #e5e5e5;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+
+.filter__head {
+  position: relative;
+  background-color: #dcdcdc;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    background-color: #dcdcdc;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.filter__btn {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

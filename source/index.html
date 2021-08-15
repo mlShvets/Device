@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <title>Интернет-магазин «Device»</title>
+  <link rel="preload" href="fonts/gilroyextrabold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroylight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link type="image/x-icon" rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="img/icons/favicons/favicon.svg">
@@ -23,7 +27,7 @@
         <button class="search__btn" type="submit">Найти</button>
       </form>
       <div class="page-header__menu user-menu">
-        <ul class="user-menu__list user-menu__login">
+        <ul class="user-menu__list user-menu__list--login">
           <li class="user-menu__item">
             <a class="user-menu__link user-menu__link--header" href="#">
               <svg width="9" height="10">
@@ -33,7 +37,7 @@
             </a>
           </li>
         </ul>
-        <ul class="user-menu__list user-menu__action">
+        <ul class="user-menu__list user-menu__list--action">
           <li class="user-menu__item">
             <a class="user-menu__link user-menu__link--header" href="#">
               <svg width="10" height="10">
@@ -56,7 +60,7 @@
     <nav class="page-header__nav main-menu">
       <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a class="main-menu__link main-menu__link--catalog" href="catalog.html">Каталог товаров
+          <a class="main-menu__link main-menu__link--catalog" href="#">Каталог товаров
           </a>
           <div class="main-menu__dropdown-menu dropdown-menu">
             <ul class="dropdown-menu__submenu">
@@ -190,7 +194,7 @@
           </a>
         </li>
         <li class="products-type__item">
-          <a class="products-type__link" href="#">
+          <a class="products-type__link" href="catalog.html">
             <div class="products-type__img-wrap">
               <svg class="products-type__img" width="86" height="117">
                 <use xlink:href="img/sprite.svg#icon-monopod"></use>
@@ -262,28 +266,34 @@
           <ul class="services-description__list">
             <li
               class="services-description__item services-description__item--delivery services-description__item--current">
-              <h3 class="services-description__title">Доставка</h3>
-              <p class="services-description__content">
-                Мы с удовольствием доставим ваш товар прямо к вашему
-                подъезду совершенно бесплатно! Ведь мы неплохо <br>
-                заработаем, поднимая его на ваш этаж.
-              </p>
+              <div class="services-description__wrap">
+                <h3 class="services-description__title">Доставка</h3>
+                <p class="services-description__content">
+                  Мы с удовольствием доставим ваш товар прямо к вашему
+                  подъезду совершенно бесплатно! Ведь мы неплохо <br>
+                  заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
             </li>
             <li class="services-description__item services-description__item--garanty">
-              <h3 class="services-description__title">Гарантия</h3>
-              <p class="services-description__content">
-                Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                не переживайте, мы выдадим вам новый.<br>
-                Товар, не дом, конечно же.
-              </p>
+              <div class="services-description__wrap">
+                <h3 class="services-description__title">Гарантия</h3>
+                <p class="services-description__content">
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                  не переживайте, мы выдадим вам новый.<br>
+                  Товар, не дом, конечно же.
+                </p>
+              </div>
             </li>
             <li class="services-description__item services-description__item--credit">
-              <h3 class="services-description__title">Кредит</h3>
-              <p class="services-description__content">
-                Залезть в долговую яму стало проще! Кредитные консультанты
-                подберут для вас наиболее выгодные<br>
-                условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
+              <div class="services-description__wrap">
+                <h3 class="services-description__title">Кредит</h3>
+                <p class="services-description__content">
+                  Залезть в долговую яму стало проще! Кредитные консультанты
+                  подберут для вас наиболее выгодные<br>
+                  условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -313,16 +323,16 @@
             <picture>
               <img class="manufacturers__img" src="img/index/go-pro.png" srcset="img/index/go-pro@2x.png 2x" width="260"
                 height="100" alt="GoPro">
+            </picture>
           </a>
-          </picture>
         </li>
         <li class="manufacturers__item">
           <a class="manufacturers__link" href="#">
             <picture>
               <img class="manufacturers__img" src="img/index/vive.png" srcset="img/index/vive@2x.png 2x" width="260"
                 height="100" alt="VIVE">
+            </picture>
           </a>
-          </picture>
         </li>
       </ul>
     </section>
@@ -330,9 +340,11 @@
       <section class="main-description__about about">
         <h2 class="about__title">О нас</h2>
         <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика,
-          <br> который есть в каждом из нас.</p>
+          <br> который есть в каждом из нас.
+        </p>
         <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки
-          <br> России! DEVICE работает со многими транспортными компаниями:</p>
+          <br> России! DEVICE работает со многими транспортными компаниями:
+        </p>
         <ul class="about__list">
           <li class="about__item">Деловые линии</li>
           <li class="about__item">Автотрейдинг</li>
@@ -361,7 +373,7 @@
           <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип">
         </a>
         <div class="page-footer__menu user-menu">
-          <ul class="user-menu__list user-menu__list--footer user-menu__login">
+          <ul class="user-menu__list user-menu__list--footer">
             <li class="user-menu__item">
               <a class="user-menu__link user-menu__link--footer" href="#">
                 <svg width="9" height="10" viewBox="0 0 9 10">
@@ -371,7 +383,7 @@
               </a>
             </li>
           </ul>
-          <ul class="user-menu__list user-menu__action">
+          <ul class="user-menu__list user-menu__list--action">
             <li class="user-menu__item">
               <a class="user-menu__link user-menu__link--footer" href="#">
                 <svg width="10" height="10" viewBox="0 0 10 10">
@@ -434,7 +446,7 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden"> HTML Academy
           </span>
           <svg class="copyright__img" width="27" height="34">
@@ -461,10 +473,10 @@
         <label class="feedback__label">Ваше имя:
           <input class="feedback__input" type="text" name="name" placeholder="Имя Фамилия">
         </label>
-        <label lass="feedback__label">Ваш e-mail:
+        <label class="feedback__label">Ваш e-mail:
           <input class="feedback__input" type="email" name="email" placeholder="email@example.com">
         </label>
-        <label lass="feedback__label"> Текст письма:
+        <label class="feedback__label"> Текст письма:
           <textarea class="feedback__input feedback__textarea" name="message"
             placeholder="В свободной форме"></textarea>
         </label>

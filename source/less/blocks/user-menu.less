@@ -1,7 +1,7 @@
 .user-menu {
   display: grid;
-  grid-template-columns: 250px 240px;
-  grid-column-gap: 30px;
+  grid-template-columns: 250px 238px;
+  grid-column-gap: 32px;
 }
 
 .user-menu__list {
@@ -12,10 +12,17 @@
 
 .user-menu__list--footer {
   justify-content: flex-end;
+
+  .user-menu__link--name {
+    padding-right: 2px;
+
+    span {
+      margin-left: 12px;
+    }
+  }
 }
 
-.user-menu__action {
-  display: flex;
+.user-menu__list--action {
   justify-content: space-between;
 }
 
@@ -41,7 +48,29 @@
     fill: black;
   }
 
-  &--footer svg {
-    fill: #ffc600;
+  &--footer {
+    color: rgba(255, 255, 255, 0.7);
+
+    & svg {
+      fill: #ffc600;
+    }
+
+    &:hover,
+    &:focus {
+      color: white;
+      opacity: 1;
+
+      & svg {
+        fill: rgba(255, 198, 0, 0.6);
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--use {
+    opacity: 0.3;
   }
 }

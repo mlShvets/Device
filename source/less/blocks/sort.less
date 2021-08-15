@@ -1,18 +1,55 @@
 .sort {
   display: flex;
-  min-width: 616px;
   justify-content: space-between;
   align-items: center;
+  padding-left: 72px;
+  background-color: #e5e5e5;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    background-color: #e5e5e5;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 .sort__types {
   display: flex;
-  min-width: 289px;
+  min-width: 290px;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 150px;
 }
 
 .sort__item {
   &:not(:last-of-type) {
     padding-right: 30px;
+  }
+}
+
+
+.sort__link {
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+  font-weight: normal;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+
+  &--current {
+    opacity: 1;
   }
 }

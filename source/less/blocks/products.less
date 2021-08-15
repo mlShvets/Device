@@ -1,14 +1,120 @@
-.products__list {
-  display: flex;
-  flex-wrap: wrap;
+.products {
+  margin-left: 72px;
+  margin-top: 70px;
+}
 
-  :not(:nth-child(2n)) {
-    padding-right: 20px;
-  }
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  grid-column-gap: 40px;
+  grid-row-gap: 46px;
+  margin-bottom: 40px;
 }
 
 .products__item {
   width: 360px;
   min-height: 455px;
-  padding-bottom: 48px;
+  position: relative;
+
+  &--new::after {
+    position: absolute;
+    content: "new";
+    top: 30px;
+    right: 27px;
+    width: 58px;
+    height: 58px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  &:hover .products__popup,
+  &:focus-within .products__popup {
+    visibility: visible;
+  }
+}
+
+.products__img-wrap {
+  width: 360px;
+  height: 380px;
+  background-color: #e5e5e5;
+}
+
+.products__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.products__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  width: 270px;
+}
+
+.products__price {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.products__popup {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 380px;
+  background: rgba(229, 229, 229, 0.7);
+  z-index: 1;
+}
+
+.products__btn {
+  background: none;
+  border: 0;
+
+  &--cart {
+    margin-bottom: 22px;
+    padding: 10px 36px 8px;
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--compare {
+    opacity: 0.5;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+
+    &:focus,
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
 }
