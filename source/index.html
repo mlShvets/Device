@@ -8,8 +8,7 @@
   <link rel="preload" href="fonts/gilroylight.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link type="image/x-icon" rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="img/icons/favicons/favicon.svg">
   <link rel="apple-touch-icon" href="img/icons/favicons/favicon180.png">
@@ -106,6 +105,7 @@
         <li class="promo-slider__item promo-slider__item--current">
           <h3 class="visually-hidden">Палка для селфи</h3>
           <picture class="promo-slider__picture">
+            <source type="image/webp" srcset="img/index/selfie-stick.webp 1x, index/selfie-stick.webp 2x">
             <img class="promo-slider__img" src="img/index/selfie-stick.png" srcset="img/index/selfie-stick@2x.png 2x"
               width="384" height="486" alt="Палка для селфи">
           </picture>
@@ -133,6 +133,7 @@
         <li class="promo-slider__item">
           <h3 class="visually-hidden">Фитнес-браслет</h3>
           <picture class="promo-slider__picture">
+            <source type="image/webp" srcset="img/index/fitness-bracelet.webp 1x, index/fitness-bracelet.webp 2x">
             <img class="promo-slider__img" src="img/index/fitness-bracelet.png"
               srcset="img/index/fitness-bracelet@2x.png 2x" width="384" height="486" alt="Фитнес-браслет">
           </picture>
@@ -153,6 +154,7 @@
         <li class="promo-slider__item">
           <h3 class="visually-hidden">Квадрокоптер</h3>
           <picture class="promo-slider__picture">
+            <source type="image/webp" srcset="img/index/quadrocopter.webp 1x, index/quadrocopter.webp 2x">
             <img class="promo-slider__img" src="img/index/quadrocopter.png" srcset="img/index/quadrocopter@2x.png 2x"
               width="526" height="334" alt="Квадрокоптер">
           </picture>
@@ -306,6 +308,7 @@
         <li class="manufacturers__item">
           <a class="manufacturers__link" href="#">
             <picture>
+              <source type="image/webp" srcset="img/index/dji.webp 1x, index/dji.webp 2x">
               <img class="manufacturers__img" src="img/index/dji.png" srcset="img/index/dji@2x.png 2x" width="260"
                 height="100" alt="DJI">
             </picture>
@@ -314,6 +317,7 @@
         <li class="manufacturers__item">
           <a class="manufacturers__link" href="#">
             <picture>
+              <source type="image/webp" srcset="img/index/sp-gadgets.webp 1x, index/sp-gadgets.webp 2x">
               <img class="manufacturers__img" src="img/index/sp-gadgets.png" srcset="img/index/sp-gadgets@2x.png 2x"
                 width="260" height="100" alt="SP Gadgets">
             </picture>
@@ -322,6 +326,7 @@
         <li class="manufacturers__item">
           <a class="manufacturers__link" href="#">
             <picture>
+              <source type="image/webp" srcset="img/index/go-pro.webp 1x, index/go-pro.webp 2x">
               <img class="manufacturers__img" src="img/index/go-pro.png" srcset="img/index/go-pro@2x.png 2x" width="260"
                 height="100" alt="GoPro">
             </picture>
@@ -330,6 +335,7 @@
         <li class="manufacturers__item">
           <a class="manufacturers__link" href="#">
             <picture>
+              <source type="image/webp" srcset="img/index/vive.webp 1x, index/vive.webp 2x">
               <img class="manufacturers__img" src="img/index/vive.png" srcset="img/index/vive@2x.png 2x" width="260"
                 height="100" alt="VIVE">
             </picture>
@@ -359,6 +365,7 @@
           проверить работоспособность покупки. Всякое бывает.</p>
         <a class="contacts__map-link" href="">
           <picture>
+            <source type="image/webp" srcset="img/index/map.webp 1x, index/map.webp 2x">
             <img class="contacts__img" src="img/index/map.png" srcset="img/index/map@2x.png 2x" width="560" height="222"
               alt="Офис: г. Москва, ул. Строителей, д.15">
           </picture>
@@ -486,7 +493,7 @@
     </form>
     <button class="modal__close modal__close--feedback" type="button" aria-label="Закрыть"></button>
   </section>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.min.js"></script>
 
 </body>
 
